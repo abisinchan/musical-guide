@@ -1,0 +1,20 @@
+*{margin:0;
+padding:0;
+}
+
+.container{
+    background-color: blueviolet;
+    height:500px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+ flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.child{
+    height: 350px;
+    width: 350px;
+    background-color: aqua;
+}
