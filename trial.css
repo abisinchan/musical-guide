@@ -1,20 +1,10 @@
 *{margin:0;
 padding:0;
 }
-
-.container{
-    background-color: blueviolet;
-    height:500px;
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
- flex-direction: column;
-   justify-content: center;
-   align-items: center;
+ul{
+text-align: center;
 }
-
-.child{
-    height: 350px;
-    width: 350px;
-    background-color: aqua;
+li{
+  display: inline;
+  margin: 5px 20px;
 }

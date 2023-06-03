@@ -12,13 +12,13 @@ body{
 header{
     width:100%;
     position:fixed;
-    z-index: 1;
     border-bottom: 1px solid seashell;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items:center;    
+    align-items:center;
+    z-index: 1;    
 }
 h1{
     font-size: 60px;
@@ -26,10 +26,9 @@ h1{
     padding-left: 20px;
     opacity:.7;
 }
-.child2{
+.links{
     width: 850px;
 }
-
 .navbar{
     display: flex;
     flex-wrap: wrap;
@@ -81,7 +80,7 @@ opacity: .5;
  background-blend-mode:luminosity;
  background-size:contain;
 }
-.mybiopic{
+.justme img{
     height: 350px;
     width: 350px;
     background-color: aqua;
@@ -104,11 +103,9 @@ p{
     line-height: 30px;
     font-size: 20px;   
 }
-
-.recproj{
-    display: inline-block;
-    font-size: 35px;
-    margin: 10px 20px;
+/* recent projects */
+#projects{
+    border-bottom: 1px solid seashell;
 }
 .listproj{
 display: flex;
@@ -116,14 +113,47 @@ flex-wrap: wrap;
 justify-content: center;
 align-items:center;
 margin:20px;
+
 }
 .work{
     margin: 0 20px;
 
 }
-#workpic1 #workpic2{
+.work img{
     opacity: .8;
 }
-
-
+.work a{
+    text-decoration: none;
+    color:seashell;
+    cursor: pointer;
+    transition: text-decoration .15s, opacity .15s;
+}
+.work a:hover{
+text-decoration: underline;
+opacity: .5;
+}
+.title{
+    display: inline-block;
+    font-size: 35px;
+    margin: 10px 20px;}
+/* contactinfo */
+.contactinfo{
+    margin-bottom: 30px;
+}
+.contactinfo ul{
+    text-align: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.contactinfo li{
+    list-style: none;
+    display: inline;
+    margin: 5px 20px;
+    font-size: 20px;
+    
+}
+.contactinfo ul a{
+    color: seashell;
+    text-decoration: dotted;
+}
 
