@@ -2,11 +2,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Playfair;  
-}
-body{
+    font-family:Playfair, Georgia, serif ;
     background-color: black;
-    color:seashell;   
+    color:seashell;  
 }
 /* header and nav */
 header{
@@ -17,75 +15,63 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: row;
     align-items:center;
-    z-index: 1;    
+    z-index: 1;       
 }
+
 h1{
-    font-size: 60px;
-    width: 450px;
+    font-size: 55px;
     padding-left: 20px;
     opacity:.7;
+   
 }
-.links{
-    width: 850px;
+.rightsection{
+    flex:1;
 }
 .navbar{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items:center;  
+    justify-content: space-evenly;
+    align-items:center; 
+    flex-direction: row;
+   
+    
 }
-.navbar .navlink{
-list-style-type: none;
-}
+
 .navlink{
     padding: 0px 20px;
     font-size: 35px;
     opacity:.7;
+    list-style-type: none;
+   
 
 }
-.navlink a{
-    text-decoration: none;
-    color:seashell;
-    cursor: pointer;
-    transition: border-radius 0.15s, background-color 0.15s, color 0.15s;
-}
-.navlink a:hover{
-   background-color: seashell;
-   color:black;
-   border-radius: 5px;
-   transition: opacity 0.15s;
-}
-.navlink a:active{
-opacity: .5;
- }
  /* main.aboutme */
  main{
     position:relative;
     width:100%;
  }
  .justme{
-    height:700px;
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
- flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border-bottom: 1px solid seashell;
-   background-color: black;
-   background-image: url(https://c4.wallpaperflare.com/wallpaper/448/699/737/3d-4k-black-geometric-wallpaper-preview.jpg);
- background-position: center;
- background-repeat:repeat-x;
- background-blend-mode:luminosity;
- background-size:contain;
+   
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid seashell;
+    /* background */
+    background-color: black;
+ 
 }
 .justme img{
     height: 350px;
     width: 350px;
-    background-color: aqua;
     border-radius: 50%;
     margin-bottom: 30px;
+   
 }
 .greet{
    margin: 20px 0; 
@@ -122,38 +108,110 @@ margin:20px;
 .work img{
     opacity: .8;
 }
-.work a{
-    text-decoration: none;
-    color:seashell;
-    cursor: pointer;
-    transition: text-decoration .15s, opacity .15s;
-}
-.work a:hover{
-text-decoration: underline;
-opacity: .5;
-}
+
 .title{
     display: inline-block;
     font-size: 35px;
     margin: 10px 20px;}
 /* contactinfo */
+
+
 .contactinfo{
     margin-bottom: 30px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .contactinfo ul{
     text-align: center;
-    align-items: center;
     margin: 10px 0;
 }
 .contactinfo li{
     list-style: none;
-    display: inline;
     margin: 5px 20px;
-    font-size: 20px;
-    
+    font-size: 20px;   
 }
-.contactinfo ul a{
-    color: seashell;
-    text-decoration: dotted;
+/* anchors */
+.navlink a{
+    transition: border-radius 0.15s, background-color 0.15s, color 0.15s;
 }
+.work a{
+    transition: text-decoration .15s, opacity .15s;
+}
+.navlink a, .work a{
+    text-decoration: none;
+    color:seashell;
+    cursor: pointer;}
+.work a{
+    transition: text-decoration .15s, opacity .15s;
+}
+.navlink a:hover{
+    background-color: seashell;
+    color:black;
+    border-radius: 5px;
+    transition: opacity 0.15s;
+ }
+.atext:hover{
+text-decoration: underline;
+}
+.work a img:hover{
+    opacity: .5;
+}
+.navlink a:active, .work a:active{
+    opacity: .3;
+    }
 
+    /* media queries */
+
+    @media (max-width: 1211px){
+        h1{
+            font-size:45px;
+    
+        }
+    
+        .navlink{
+            font-size: 25px;
+        }
+       
+    }
+
+    @media (max-width: 957px){
+        h1{
+            font-size:35px;
+    
+        }
+    
+        .navlink{
+            font-size: 15px;
+        }
+       
+    }
+
+    @media (max-width: 604px){
+        h1{
+            font-size:20px;
+    
+        }
+    
+        .navlink{
+            font-size: 15px;
+        }
+    }
+       
+        @media (max-width: 393px){
+            h1{
+                font-size:15px;
+        
+            }
+        
+            .navlink{
+                font-size: 10px;
+            }
+           
+    }
+
+    
+        
+
+        
