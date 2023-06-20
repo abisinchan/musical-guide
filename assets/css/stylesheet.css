@@ -178,9 +178,9 @@ text-decoration: underline;
     opacity: .3;
     }
 
-    media queries
+    /* media queries */
 
-    @media (max-width: 1211px){
+    @media screen and (max-width: 1211px){
         h1{
             font-size:45px;
     
@@ -192,7 +192,7 @@ text-decoration: underline;
        
     }
 
-    @media (max-width: 957px){
+    @media screen and (max-width: 957px){
         h1{
             font-size:35px;
     
@@ -204,7 +204,7 @@ text-decoration: underline;
        
     }
 
-    @media (max-width: 604px){
+    @media screen and (max-width: 604px){
         h1{
             font-size:20px;
     
@@ -215,7 +215,7 @@ text-decoration: underline;
         }
     }
        
-        @media (max-width: 393px){
+    @media screen and (max-width: 393px){
             h1{
                 font-size:15px;
         
